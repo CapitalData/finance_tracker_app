@@ -1,0 +1,159 @@
+,Task name,Color,Labels,Swimlane,Group,User,From,To,Time spent,Comment,Time entry labels,Board
+0,Axcel course revamp - meetings and admin,Orange,,,2025-03-21,Gunnar kleemann,15:15,16:45,1.5,,"GAI-2101, meetings",ACD_education
+1,payroll,Orange,,,2025-03-21,Gunnar kleemann,17:26,18:26,1.0,,,ACD_Financial
+2,UC berkeley class prep and reading,Magenta,,,2025-03-20,Gunnar kleemann,15:45,18:15,2.5,,project 1,UCBerkeley_work
+3,Acd finance tracking codebase,Yellow,,,2025-03-19,Gunnar kleemann,11:48,12:02,0.24,,,ACD_Financial
+4,payroll,Orange,,,2025-03-19,Gunnar kleemann,12:02,12:13,0.18,,,ACD_Financial
+5,payroll,Orange,,,2025-03-19,Gunnar kleemann,12:20,12:47,0.44,,,ACD_Financial
+6,payroll,Orange,,,2025-03-19,Gunnar kleemann,12:54,13:25,0.51,,,ACD_Financial
+7,payroll,Orange,,,2025-03-19,Gunnar kleemann,13:38,14:13,0.58,,,ACD_Financial
+8,Acd finance tracking codebase,Yellow,,,2025-03-19,Gunnar kleemann,14:13,14:13,0.0,,,ACD_Financial
+9,Acd finance tracking codebase,Yellow,,,2025-03-19,Gunnar kleemann,14:29,15:39,1.17,,,ACD_Financial
+10,Acd finance tracking codebase,Yellow,,,2025-03-19,Gunnar kleemann,15:39,17:51,2.2,,,ACD_Financial
+11,UC berkeley class prep and reading,Magenta,,,2025-03-19,Gunnar kleemann,17:52,18:17,0.43,,,UCBerkeley_work
+12,UC berkeley class prep and reading,Magenta,,,2025-03-19,Gunnar kleemann,18:17,18:44,0.44,,,UCBerkeley_work
+13,UC berkeley teaching,Magenta,,,2025-03-19,Gunnar kleemann,19:01,20:39,1.64,,,UCBerkeley_work
+14,UC Berkeley curriculum development,Magenta,"curriculum, Berkeley",,2025-03-18,Gunnar kleemann,08:46,11:16,2.5,,project 2,UCBerkeley_work
+15,UC Berkeley curriculum development,Magenta,"curriculum, Berkeley",,2025-03-18,Gunnar kleemann,10:16,11:16,1.0,,Office hours,UCBerkeley_work
+16,UC Berkeley emails meetings and organization,Magenta,,,2025-03-17,Gunnar kleemann,15:56,16:26,0.5,,,UCBerkeley_work
+17,Axcel course revamp - curriculum generation,Orange,,,2025-03-14,Gunnar kleemann,10:53,11:53,1.0,,meetings,ACD_education
+18,answering emails scheduling and slack etc - ACD,Red,,,2025-03-14,Gunnar kleemann,10:55,11:55,1.0,,client,ACD_business
+19,staffing emails and scheduling etc,Cyan,,,2025-03-14,Gunnar kleemann,11:58,13:58,2.0,,,ACD_business
+20,social media posting and commenting,Cyan,,,2025-03-13,Gunnar kleemann,09:49,11:04,1.25,,ACD blog,ACD_education
+21,Axcel course revamp - curriculum generation,Orange,,,2025-03-13,Gunnar kleemann,10:53,11:53,1.0,,"meetings, preparation",ACD_education
+22,taxes and finance,Yellow,,,2025-03-13,Gunnar kleemann,13:25,13:55,0.5,,,ACD_Financial
+23,ACD internal meetings,Red,meeting,,2025-03-13,Gunnar kleemann,13:25,13:55,0.5,,standup,ACD_business
+24,meetings,Yellow,,,2025-03-13,Gunnar kleemann,17:56,18:56,1.0,,SLT,BDSG_operations
+25,taxes and finance,Yellow,,,2025-03-12,Gunnar kleemann,09:03,10:03,1.0,,,ACD_Financial
+26,content editing,Cyan,,,2025-03-12,Gunnar kleemann,10:16,10:49,0.56,,,ACD_education
+27,meetings,Yellow,,,2025-03-12,Gunnar kleemann,10:42,11:57,1.25,,canopy,BDSG_operations
+28,content editing,Cyan,,,2025-03-12,Gunnar kleemann,10:57,11:23,0.43,,,ACD_education
+29,content editing,Cyan,,,2025-03-12,Gunnar kleemann,11:30,11:56,0.43,,,ACD_education
+30,Web page updates,Cyan,,,2025-03-11,Gunnar kleemann,08:14,10:14,2.0,,,ACD_education
+31,scoping projects,Yellow,,,2025-03-11,Gunnar kleemann,12:48,13:25,0.62,https://docs.google.com/document/d/1ZToIErdBk3rWh6KwtP5irS6xCYvOUSZqbOmgQU88aTk/edit?tab=t.0,"canopy, scoping questions",BDSG_operations
+32,UC berkeley teaching,Magenta,,,2025-03-11,Gunnar kleemann,16:11,17:11,1.0,,,UCBerkeley_work
+33,vignette generation,Yellow,,,2025-03-11,Gunnar kleemann,16:40,17:10,0.5,,HOA blog,BDSG_operations
+34,staffing emails and scheduling etc,Cyan,,,2025-03-10,Gunnar kleemann,09:01,10:16,1.25,,,ACD_business
+35,development and testing,Yellow,,,2025-03-10,Gunnar kleemann,09:39,12:39,3.0,,"canopy, nvidia jetson",BDSG_operations
+36,managing work and tasks,Yellow,,,2025-03-10,Gunnar kleemann,10:22,11:52,1.5,,,ACD_business
+37,ACD internal meetings,Red,meeting,,2025-03-10,Gunnar kleemann,12:16,13:16,1.0,,standup,ACD_business
+38,meetings,Yellow,,,2025-03-07,Gunnar kleemann,11:50,12:50,1.0,,canopy,BDSG_operations
+39,taxes and finance,Yellow,,,2025-03-07,Gunnar kleemann,17:07,23:07,6.0,,,ACD_Financial
+40,UC berkeley teaching,Magenta,,,2025-03-06,Gunnar kleemann,04:58,10:28,5.5,,,UCBerkeley_work
+41,UC berkeley class prep and reading,Magenta,,,2025-03-06,Gunnar kleemann,09:29,10:29,1.0,,,UCBerkeley_work
+42,phising in detailed,Cyan,,,2025-03-06,Gunnar kleemann,09:51,10:37,0.77,,editing and posting,ACD_education
+43,taxes and finance,Yellow,,,2025-03-05,Gunnar kleemann,11:27,15:31,4.07,,QB classification,ACD_Financial
+44,meetings,Yellow,,,2025-03-05,Gunnar kleemann,14:42,15:42,1.0,,spontaneous meeting,BDSG_operations
+45,UC berkeley class prep and reading,Magenta,,,2025-03-05,Gunnar kleemann,18:44,20:22,1.64,,,UCBerkeley_work
+46,UC berkeley teaching,Magenta,,,2025-03-05,Gunnar kleemann,18:54,20:24,1.5,,,UCBerkeley_work
+47,staffing emails and scheduling etc,Cyan,,,2025-03-01,Gunnar kleemann,10:48,11:48,1.0,,nvidia dli,ACD_business
+48,privacy and Data Science security advocate,Cyan,,,2025-02-28,Gunnar kleemann,10:18,12:14,1.93,,editing and posting,ACD_education
+49,UC berkeley teaching,Magenta,,,2025-02-28,Gunnar kleemann,10:47,11:47,1.0,,,UCBerkeley_work
+50,UC berkeley teaching,Magenta,,,2025-02-28,Gunnar kleemann,10:47,11:47,1.0,,,UCBerkeley_work
+51,taxes and finance,Yellow,,,2025-02-28,Gunnar kleemann,12:22,14:34,2.2,,,ACD_Financial
+52,UC berkeley class prep and reading,Magenta,,,2025-02-27,Gunnar kleemann,08:58,09:28,0.5,,,UCBerkeley_work
+53,UC Berkeley emails meetings and organization,Magenta,,,2025-02-27,Gunnar kleemann,08:58,09:28,0.5,,,UCBerkeley_work
+54,UC berkeley teaching,Magenta,,,2025-02-27,Gunnar kleemann,09:52,15:22,5.5,,,UCBerkeley_work
+55,ACD internal meetings,Red,meeting,,2025-02-27,Gunnar kleemann,12:09,13:09,1.0,,,ACD_business
+56,Acd finance tracking codebase,Yellow,,,2025-02-27,Gunnar kleemann,12:21,15:21,3.0,,,ACD_Financial
+57,vignette generation,Yellow,,,2025-02-27,Gunnar kleemann,12:39,13:09,0.5,,,BDSG_operations
+58,Acd finance tracking codebase,Yellow,,,2025-02-26,Gunnar kleemann,11:40,12:07,0.46,,,ACD_Financial
+59,Acd finance tracking codebase,Yellow,,,2025-02-26,Gunnar kleemann,12:52,13:47,0.92,,,ACD_Financial
+60,vignette generation,Yellow,,,2025-02-26,Gunnar kleemann,13:50,17:50,4.0,,,BDSG_operations
+61,vignette generation,Yellow,,,2025-02-25,Gunnar kleemann,14:51,17:51,3.0,,,BDSG_operations
+62,payroll,Orange,,,2025-02-24,Gunnar kleemann,10:17,11:47,1.5,,,ACD_Financial
+63,Acd finance tracking codebase,Yellow,,,2025-02-24,Gunnar kleemann,10:31,11:30,0.98,,,ACD_Financial
+64,Billing,Orange,,,2025-02-24,Gunnar kleemann,11:18,11:48,0.5,,,ACD_Financial
+65,Acd finance tracking codebase,Yellow,,,2025-02-24,Gunnar kleemann,11:50,14:19,2.49,,,ACD_Financial
+66,UC Berkeley curriculum development,Magenta,"curriculum, Berkeley",,2025-02-24,Gunnar kleemann,14:20,14:59,0.65,,project 1,UCBerkeley_work
+67,Acd finance tracking codebase,Yellow,,,2025-02-23,Gunnar kleemann,05:31,10:31,5.0,,,ACD_Financial
+68,UC berkeley teaching,Magenta,,,2025-02-20,Gunnar kleemann,16:53,19:53,3.0,,,UCBerkeley_work
+69,UC Berkeley emails meetings and organization,Magenta,,,2025-02-20,Gunnar kleemann,19:23,19:53,0.5,,,UCBerkeley_work
+70,emails and texts,Yellow,,,2025-02-19,Gunnar kleemann,11:51,13:51,2.0,,,BDSG_operations
+71,meetings,Yellow,,,2025-02-19,Gunnar kleemann,12:51,13:51,1.0,,,BDSG_operations
+72,answering emails scheduling and slack etc - ACD,Red,,,2025-02-19,Gunnar kleemann,12:52,13:52,1.0,,,ACD_business
+73,contract generation and maintenance,Yellow,,,2025-02-19,Gunnar kleemann,12:52,13:52,1.0,,,ACD_business
+74,UC Berkeley curriculum development,Magenta,"curriculum, Berkeley",,2025-02-17,Gunnar kleemann,11:40,14:40,3.0,,project 1,UCBerkeley_work
+75,UC Berkeley curriculum development,Magenta,"curriculum, Berkeley",,2025-02-17,Gunnar kleemann,13:42,16:42,3.0,,project 1,UCBerkeley_work
+76,UC Berkeley curriculum development,Magenta,"curriculum, Berkeley",,2025-02-17,Gunnar kleemann,16:43,17:50,1.12,,project 1,UCBerkeley_work
+77,UC Berkeley curriculum development,Magenta,"curriculum, Berkeley",,2025-02-17,Gunnar kleemann,19:36,20:56,1.34,,,UCBerkeley_work
+78,UC Berkeley curriculum development,Magenta,"curriculum, Berkeley",,2025-02-16,Gunnar kleemann,12:42,16:42,4.0,,project 1,UCBerkeley_work
+79,UC Berkeley curriculum development,Magenta,"curriculum, Berkeley",,2025-02-14,Gunnar kleemann,13:42,16:42,3.0,,,UCBerkeley_work
+80,CDC - NCIPC session 6- Graph RAG and adaptors demo,Orange,,,2025-02-05,Gunnar kleemann,09:51,17:50,7.98,,,ACD_education
+81,UC berkeley class prep and reading,Magenta,,,2025-02-05,Gunnar kleemann,17:55,18:50,0.92,,,UCBerkeley_work
+82,UC berkeley teaching,Magenta,,,2025-02-05,Gunnar kleemann,18:21,19:51,1.5,,,UCBerkeley_work
+83,CDC - NCIPC session 6- Graph RAG and adaptors demo,Orange,,,2025-02-04,Gunnar kleemann,08:51,09:51,1.0,,,ACD_education
+84,Axcel course revamp - outline work,Orange,,,2025-02-04,Gunnar kleemann,15:36,20:09,4.56,,,ACD_education
+85,CDC - NCIPC session 6- Graph RAG and adaptors demo,Orange,,,2025-02-03,Gunnar kleemann,05:42,06:42,1.0,,,ACD_education
+86,CDC - NCIPC session 6- Graph RAG and adaptors demo,Orange,,,2025-02-03,Gunnar kleemann,17:12,19:12,2.0,,,ACD_education
+87,Axcel course revamp - outline work,Orange,,,2025-02-03,Gunnar kleemann,19:21,20:15,0.89,,,ACD_education
+88,CDC - NCIPC session 6- Graph RAG and adaptors demo,Orange,,,2025-02-01,Gunnar kleemann,15:06,15:41,0.58,,,ACD_education
+89,CDC - NCIPC session 6- Graph RAG and adaptors demo,Orange,,,2025-01-31,Gunnar kleemann,11:01,15:01,4.0,,,ACD_education
+90,CDC - NCIPC session 6- Graph RAG and adaptors demo,Orange,,,2025-01-30,Gunnar kleemann,15:50,18:39,2.83,,,ACD_education
+91,Axcel course revamp - outline work,Orange,,,2025-01-29,Gunnar kleemann,11:01,11:31,0.51,,"1201, outline",ACD_education
+92,Axcel course revamp - outline work,Orange,,,2025-01-29,Gunnar kleemann,11:32,13:01,1.48,,"1201, outline",ACD_education
+93,CDC - NCIPC session 6- Graph RAG and adaptors demo,Orange,,,2025-01-29,Gunnar kleemann,14:39,15:27,0.8,,,ACD_education
+94,CDC - NCIPC session 6- Graph RAG and adaptors demo,Orange,,,2025-01-29,Gunnar kleemann,16:04,16:24,0.33,,,ACD_education
+95,UC berkeley class prep and reading,Magenta,,,2025-01-29,Gunnar kleemann,16:25,19:00,2.58,,,UCBerkeley_work
+96,UC berkeley teaching,Magenta,,,2025-01-29,Gunnar kleemann,22:22,23:52,1.5,,,UCBerkeley_work
+97,CDC - NCIPC session 6- Graph RAG and adaptors demo,Orange,,,2025-01-28,Gunnar kleemann,00:00,00:30,0.51,,,ACD_education
+98,Axcel course revamp - meetings and admin,Orange,,,2025-01-28,Gunnar kleemann,14:29,14:44,0.25,G. Mein,,ACD_education
+99,Axcel course revamp - outline work,Orange,,,2025-01-28,Gunnar kleemann,14:55,15:21,0.42,,"1201, outline",ACD_education
+100,Axcel course revamp - outline work,Orange,,,2025-01-28,Gunnar kleemann,15:28,15:54,0.44,,"1201, outline",ACD_education
+101,Axcel course revamp - outline work,Orange,,,2025-01-28,Gunnar kleemann,16:04,16:34,0.49,,"1201, outline",ACD_education
+102,Axcel course revamp - outline work,Orange,,,2025-01-28,Gunnar kleemann,16:41,17:00,0.32,,"1201, outline",ACD_education
+103,Axcel course revamp - outline work,Orange,,,2025-01-28,Gunnar kleemann,18:15,18:32,0.28,,"1201, outline",ACD_education
+104,Axcel course revamp - outline work,Orange,,,2025-01-28,Gunnar kleemann,19:57,20:02,0.1,,"1201, outline",ACD_education
+105,Mark Labowitz review work,Yellow,,,2025-01-27,Gunnar kleemann,09:26,10:08,0.69,,,UCBerkeley_work
+106,Axcel course revamp - outline work,Orange,,,2025-01-27,Gunnar kleemann,10:10,10:27,0.28,,"1201, 0utline",ACD_education
+107,Axcel course revamp - outline work,Orange,,,2025-01-27,Gunnar kleemann,10:29,10:57,0.46,,"outline, 1201",ACD_education
+108,Axcel course revamp - meetings and admin,Orange,,,2025-01-27,Gunnar kleemann,14:00,14:45,0.75,K.martin meeting,genAI curriculim,ACD_education
+109,Axcel course revamp - outline work,Orange,,,2025-01-27,Gunnar kleemann,14:23,15:00,0.61,,"outline, 1201",ACD_education
+110,Axcel course revamp - outline work,Orange,,,2025-01-27,Gunnar kleemann,15:18,16:26,1.13,,"outline, 1201",ACD_education
+111,Axcel course revamp - outline work,Orange,,,2025-01-27,Gunnar kleemann,16:43,18:16,1.55,,"1201, 0utline",ACD_education
+112,Axcel course revamp - outline work,Orange,,,2025-01-27,Gunnar kleemann,19:59,20:20,0.34,,"outline, 1201",ACD_education
+113,CDC - NCIPC session 6- Graph RAG and adaptors demo,Orange,,,2025-01-27,Gunnar kleemann,23:10,00:00,0.83,,,ACD_education
+114,Mark Labowitz review work,Yellow,,,2025-01-24,Gunnar kleemann,09:20,11:50,2.5,,,UCBerkeley_work
+115,Axcel course revamp - curriculum generation,Orange,,,2025-01-24,Gunnar kleemann,14:02,14:27,0.42,,"1001 outline revise, 1001, outline, revise",ACD_education
+116,Axcel course revamp - curriculum generation,Orange,,,2025-01-24,Gunnar kleemann,15:31,16:33,1.03,1001 update,"1001 outline revise, 1001, revise",ACD_education
+117,Axcel course revamp - curriculum generation,Orange,,,2025-01-24,Gunnar kleemann,16:40,16:53,0.22,,,ACD_education
+118,Axcel course revamp - outline work,Orange,,,2025-01-23,Gunnar kleemann,00:03,02:09,2.1,1001 outline,1001 outline,ACD_education
+119,Axcel course revamp - outline work,Orange,,,2025-01-23,Gunnar kleemann,02:19,02:56,0.63,1001 outline,1001 outline,ACD_education
+120,Axcel course revamp - outline work,Orange,,,2025-01-23,Gunnar kleemann,09:21,11:27,2.1,1001 outline,1001 outline,ACD_education
+121,Mark Labowitz review work,Yellow,,,2025-01-23,Gunnar kleemann,09:49,11:49,2.0,,,UCBerkeley_work
+122,Axcel course revamp - outline work,Orange,,,2025-01-23,Gunnar kleemann,14:31,15:01,0.5,1001 outline,1001 outline,ACD_education
+123,Axcel course revamp - outline work,Orange,,,2025-01-23,Gunnar kleemann,15:02,15:54,0.87,1001 outline,1001 outline,ACD_education
+124,Mark Labowitz review work,Yellow,,,2025-01-23,Gunnar kleemann,16:31,16:56,0.42,,,UCBerkeley_work
+125,Axcel course revamp - outline work,Orange,,,2025-01-22,Gunnar kleemann,00:00,00:34,0.58,1001 outline,,ACD_education
+126,Axcel course revamp - outline work,Orange,,,2025-01-22,Gunnar kleemann,11:31,12:00,0.48,1001 outline,1001 outline,ACD_education
+127,Axcel course revamp - outline work,Orange,,,2025-01-22,Gunnar kleemann,12:10,13:10,1.0,1001 Lab writing. Bill later?,1001 code,ACD_education
+128,Axcel course revamp - outline work,Orange,,,2025-01-22,Gunnar kleemann,13:29,15:15,1.77,1001 outline,1001 outline,ACD_education
+129,ACD internal meetings,Red,meeting,,2025-01-22,Gunnar kleemann,14:17,15:17,1.0,Kirti pep talk for Pearl Health,,ACD_business
+130,UC berkeley class prep and reading,Magenta,,,2025-01-22,Gunnar kleemann,15:39,17:33,1.9,,,UCBerkeley_work
+131,UC berkeley teaching,Magenta,,,2025-01-22,Gunnar kleemann,22:01,23:31,1.5,,,UCBerkeley_work
+132,Axcel course revamp - outline work,Orange,,,2025-01-21,Gunnar kleemann,20:58,22:54,1.93,,,ACD_education
+133,Axcel course revamp - outline work,Orange,,,2025-01-21,Gunnar kleemann,22:55,23:17,0.36,,,ACD_education
+134,Axcel course revamp - outline work,Orange,,,2025-01-21,Gunnar kleemann,23:41,00:00,0.3,1001 outline,,ACD_education
+135,Billing,Orange,,,2025-01-19,Gunnar kleemann,11:35,15:56,4.35,,,ACD_Financial
+136,Axcel course revamp - meetings and admin,Orange,,,2025-01-18,Gunnar kleemann,09:12,10:46,1.57,"staffing and coordination, 3 day gen AI (2/27) and 11 course descriptions (1/31)",,ACD_education
+137,UC berkeley teaching,Magenta,,,2025-01-18,Gunnar kleemann,10:43,12:43,2.0,,,UCBerkeley_work
+138,Axcel course revamp - outline work,Orange,,,2025-01-18,Gunnar kleemann,13:29,14:13,0.74,1001 outline,,ACD_education
+139,Mark Labowitz review work,Yellow,,,2025-01-17,Gunnar kleemann,14:01,16:31,2.5,discussions and reading examples,,UCBerkeley_work
+140,UC berkeley teaching,Magenta,,,2025-01-16,Gunnar kleemann,08:13,12:43,4.5,,,UCBerkeley_work
+141,UC berkeley class prep and reading,Magenta,,,2025-01-15,Gunnar kleemann,08:09,09:39,1.5,,,UCBerkeley_work
+142,UC berkeley teaching,Magenta,,,2025-01-15,Gunnar kleemann,08:10,09:40,1.5,,,UCBerkeley_work
+143,payroll,Orange,,,2025-01-15,Gunnar kleemann,08:40,09:40,1.0,,,ACD_Financial
+144,Axcel course revamp - meetings and admin,Orange,,,2025-01-15,Gunnar kleemann,10:44,12:14,1.5,,,ACD_education
+145,answering emails scheduling and slack etc - ACD,Red,,,2025-01-15,Gunnar kleemann,11:15,12:15,1.0,,,ACD_business
+146,Axcel course revamp - meetings and admin,Orange,,,2025-01-14,Gunnar kleemann,09:22,10:52,1.5,,,ACD_education
+147,Acd finance tracking codebase,Yellow,,,2025-01-08,Gunnar kleemann,10:29,11:16,0.79,,,ACD_Financial
+148,Acd finance tracking codebase,Yellow,,,2025-01-08,Gunnar kleemann,11:16,11:58,0.7,,,ACD_Financial
+149,ACD internal meetings,Red,meeting,,2025-01-08,Gunnar kleemann,11:59,15:58,3.98,,,ACD_business
+150,UC Berkeley emails meetings and organization,Magenta,,,2025-01-07,Gunnar kleemann,18:38,20:38,2.0,,,UCBerkeley_work
+151,Acd finance tracking codebase,Yellow,,,2025-01-07,Gunnar kleemann,19:38,20:38,1.0,,,ACD_Financial
+152,UC Berkeley emails meetings and organization,Magenta,,,2025-01-06,Gunnar kleemann,12:16,13:46,1.5,,,UCBerkeley_work
+153,UC Berkeley emails meetings and organization,Magenta,,,2025-01-06,Gunnar kleemann,19:38,20:38,1.0,,,UCBerkeley_work
+154,you tube operations (edit and post),Red,,,2025-01-03,Gunnar kleemann,00:00,00:39,0.65,,,ACD_Projects
+155,Acd finance tracking codebase,Yellow,,,2025-01-03,Gunnar kleemann,00:00,00:40,0.67,,,ACD_Financial
+156,you tube operations (edit and post),Red,,,2025-01-02,Gunnar kleemann,19:39,00:00,4.35,,,ACD_Projects
+157,Acd finance tracking codebase,Yellow,,,2025-01-02,Gunnar kleemann,21:40,00:00,2.33,,,ACD_Financial

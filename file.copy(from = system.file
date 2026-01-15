@@ -1,0 +1,2 @@
+file.copy(from = system.file
+("rmarkdown/templates/revealjs_presentation/skeleton/skeleton.html",package="rmarkdown"), to   = here::here("dependencies/reveal_template.html"))

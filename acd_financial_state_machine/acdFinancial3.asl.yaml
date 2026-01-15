@@ -1,0 +1,47 @@
+Comment: Financial workflow with QuickSight data preparation
+StartAt: LoadGoogleSheetsData
+States:
+  LoadGoogleSheetsData:
+    Type: Task
+    Resource: arn:aws:lambda:us-east-1:923029763609:function:sheet_loader
+    Next: ProcessAllTables
+  ProcessAllTables:
+    Type: Map
+    ItemsPath: $.combined_batches
+    ItemProcessor:
+      ProcessorConfig:
+        Mode: INLINE
+      StartAt: ClassifyRows
+      States:
+        ClassifyRows:
+          Type: Task
+          Resource: arn:aws:lambda:us-east-1:923029763609:function:row-classifier
+          Next: RouteByClassification
+        RouteByClassification:
+          Type: Choice
+          Choices:
+            - Variable: $.classification
+              StringEquals: invoice
+              Next: ProcessInvoiceRows
+            - Variable: $.classification
+              StringEquals: job
+              Next: ProcessJobRows
+          Default: ProcessDefaultRows
+        ProcessInvoiceRows:
+          Type: Task
+          Resource: arn:aws:lambda:us-east-1:923029763609:function:process-invoice-rows
+          End: true
+        ProcessJobRows:
+          Type: Task
+          Resource: arn:aws:lambda:us-east-1:923029763609:function:process-job-rows
+          End: true
+        ProcessDefaultRows:
+          Type: Task
+          Resource: arn:aws:lambda:us-east-1:923029763609:function:process-default-rows
+          End: true
+    ResultPath: $.all_processing_results
+    Next: PrepareQuickSightData
+  PrepareQuickSightData:
+    Type: Task
+    Resource: arn:aws:lambda:us-east-1:923029763609:function:quicksight-data-prep
+    End: true

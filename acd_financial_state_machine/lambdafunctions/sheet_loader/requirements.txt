@@ -1,0 +1,18 @@
+# Google Sheets and Authentication
+gspread>=5.7.0
+oauth2client>=4.1.3
+
+# Google Authentication Libraries
+google-auth>=1.4.0
+google-auth-oauthlib>=0.4.0
+google-auth-httplib2>=0.1.0
+
+# HTTP and Utilities
+requests>=2.20.0
+httplib2>=0.15.0
+six>=1.6.1
+
+# Cryptography for OAuth2
+pyasn1>=0.1.9
+pyasn1-modules>=0.0.5
+rsa>=3.1.4

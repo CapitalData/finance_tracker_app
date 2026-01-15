@@ -1,0 +1,42 @@
+{
+  "Invoice Buckets": [
+    {
+      "name": "Incoming invoices",
+      "url": "https://drive.google.com/drive/folders/YOUR_INCOMING_FOLDER_ID"
+    },
+    {
+      "name": "Processed invoices",
+      "url": "https://drive.google.com/drive/folders/YOUR_PROCESSED_FOLDER_ID"
+    }
+  ],
+  "Payment Systems": [
+    {
+      "name": "QuickBooks Online",
+      "url": "https://qbo.intuit.com"
+    },
+    {
+      "name": "Bank Portal",
+      "url": "https://yourbank.example.com"
+    }
+  ],
+  "Financial Documents": [
+    {
+      "name": "Finance Tracker Sheet",
+      "url": "GOOGLE_SHEET_URL_PLACEHOLDER"
+    },
+    {
+      "name": "Document Archive",
+      "url": "https://drive.google.com/drive/folders/YOUR_DOCS_FOLDER_ID"
+    }
+  ],
+  "Communication": [
+    {
+      "name": "Gmail",
+      "url": "https://mail.google.com"
+    },
+    {
+      "name": "Slack",
+      "url": "https://slack.com/signin"
+    }
+  ]
+}

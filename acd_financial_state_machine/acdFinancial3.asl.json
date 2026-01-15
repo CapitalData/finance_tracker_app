@@ -1,0 +1,121 @@
+{
+  "Comment": "Financial workflow with full S3-based data flow",
+  "StartAt": "LoadGoogleSheetsData",
+  "States": {
+    "LoadGoogleSheetsData": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:us-east-1:923029763609:function:sheet_loader",
+      "Next": "ProcessAllTables"
+    },
+    "ProcessAllTables": {
+      "Type": "Map",
+      "ItemsPath": "$.combined_batches",
+      "MaxConcurrency": 5,
+      "ItemProcessor": {
+        "ProcessorConfig": {
+          "Mode": "INLINE"
+        },
+        "StartAt": "ClassifyRows",
+        "States": {
+          "ClassifyRows": {
+            "Type": "Task",
+            "Resource": "arn:aws:lambda:us-east-1:923029763609:function:row-classifier",
+            "Next": "CheckClassificationSuccess"
+          },
+          "CheckClassificationSuccess": {
+            "Type": "Choice",
+            "Choices": [
+              {
+                "Variable": "$.statusCode",
+                "NumericEquals": 200,
+                "Next": "RouteByClassification"
+              }
+            ],
+            "Default": "ClassificationFailed"
+          },
+          "RouteByClassification": {
+            "Type": "Choice",
+            "Choices": [
+              {
+                "Variable": "$.classification",
+                "StringEquals": "invoice",
+                "Next": "ProcessInvoiceRows"
+              },
+              {
+                "Variable": "$.classification",
+                "StringEquals": "job",
+                "Next": "ProcessJobRows"
+              },
+              {
+                "Or": [
+                  {
+                    "Variable": "$.classification",
+                    "StringEquals": "default"
+                  },
+                  {
+                    "Variable": "$.classification",
+                    "StringEquals": "unknown"
+                  },
+                  {
+                    "Not": {
+                      "Variable": "$.classification",
+                      "IsPresent": true
+                    }
+                  }
+                ]
+                ,"Next": "ProcessDefaultRows"
+              }
+            ],
+            "Default": "ProcessDefaultRows"
+          },
+          "ProcessInvoiceRows": {
+            "Type": "Task",
+            "Resource": "arn:aws:lambda:us-east-1:923029763609:function:process-invoice-rows",
+            "End": true
+          },
+          "ProcessJobRows": {
+            "Type": "Task",
+            "Resource": "arn:aws:lambda:us-east-1:923029763609:function:process-job-rows",
+            "End": true
+          },
+          "ProcessDefaultRows": {
+            "Type": "Task",
+            "Resource": "arn:aws:lambda:us-east-1:923029763609:function:process-default-rows",
+            "End": true
+          },
+          "ClassificationFailed": {
+            "Type": "Pass",
+            "Parameters": {
+              "statusCode": 500,
+              "error": "Classification failed",
+              "batch_id.$": "$.batch_id",
+              "execution_id.$": "$.execution_id",
+              "data_type": "failed",
+              "processed_count": 0,
+              "success": false
+            },
+            "End": true
+          }
+        }
+      },
+      "ResultSelector": {
+        "execution_id.$": "$[0].execution_id",
+        "total_batches.$": "States.ArrayLength($)",
+        "successful_batches.$": "States.ArrayLength($[?(@.statusCode == 200)])",
+        "failed_batches.$": "States.ArrayLength($[?(@.statusCode != 200)])"
+      },
+      "Next": "PrepareQuickSightData"
+    },
+    "PrepareQuickSightData": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:us-east-1:923029763609:function:quicksight-data-prep",
+      "Parameters": {
+        "execution_id.$": "$.execution_id",
+        "total_batches_processed.$": "$.total_batches",
+        "successful_batches.$": "$.successful_batches",
+        "failed_batches.$": "$.failed_batches"
+      },
+      "End": true
+    }
+  }
+}

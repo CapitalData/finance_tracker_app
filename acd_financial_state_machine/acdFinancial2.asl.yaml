@@ -1,0 +1,83 @@
+Comment: Financial workflow for processing Google Sheets data
+StartAt: LoadGoogleSheetsData
+States:
+  LoadGoogleSheetsData:
+    Type: Task
+    Resource: arn:aws:lambda:us-east-1:923029763609:function:sheet_loader
+    Next: ProcessJobsTable
+  ProcessJobsTable:
+    Type: Map
+    ItemsPath: $.s3_keys.jobs_tbl.batches
+    ItemProcessor:
+      ProcessorConfig:
+        Mode: INLINE
+      StartAt: ClassifyRow
+      States:
+        ClassifyRow:
+          Type: Task
+          Resource: arn:aws:lambda:us-east-1:923029763609:function:row-classifier
+          Next: RouteByClassification
+        RouteByClassification:
+          Type: Choice
+          Choices:
+            - Variable: $.classification
+              StringEquals: invoice
+              Next: ProcessInvoice
+            - Variable: $.classification
+              StringEquals: job
+              Next: ProcessJob
+          Default: ProcessGeneric
+        ProcessInvoice:
+          Type: Task
+          Resource: arn:aws:lambda:us-east-1:923029763609:function:process-invoice
+          End: true
+        ProcessJob:
+          Type: Task
+          Resource: arn:aws:lambda:us-east-1:923029763609:function:process-job
+          End: true
+        ProcessGeneric:
+          Type: Task
+          Resource: arn:aws:lambda:us-east-1:923029763609:function:process-generic
+          End: true
+    Next: ProcessInvoicesTable
+  ProcessInvoicesTable:
+    Type: Map
+    ItemsPath: $.s3_keys.inv_tbl.batches
+    ItemProcessor:
+      ProcessorConfig:
+        Mode: INLINE
+      StartAt: ClassifyRow_invoice
+      States:
+        ClassifyRow_invoice:
+          Type: Task
+          Resource: >-
+            arn:aws:lambda:us-east-1:923029763609:function:row-classifier:$LATEST
+          Next: RouteInvoiceByType
+        RouteInvoiceByType:
+          Type: Choice
+          Choices:
+            - Variable: $.invoice_type
+              StringEquals: payment
+              Next: ProcessPayment
+            - Variable: $.invoice_type
+              StringEquals: billing
+              Next: ProcessBilling
+          Default: ProcessGenericInvoice
+        ProcessPayment:
+          Type: Task
+          Resource: arn:aws:lambda:us-east-1:923029763609:function:process-payment
+          End: true
+        ProcessBilling:
+          Type: Task
+          Resource: arn:aws:lambda:us-east-1:923029763609:function:process-billing
+          End: true
+        ProcessGenericInvoice:
+          Type: Task
+          Resource: >-
+            arn:aws:lambda:us-east-1:923029763609:function:process-generic-invoice
+          End: true
+    Next: AggregateResults
+  AggregateResults:
+    Type: Task
+    Resource: arn:aws:lambda:us-east-1:923029763609:function:aggregate-results
+    End: true

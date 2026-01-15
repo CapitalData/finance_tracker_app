@@ -1,0 +1,26 @@
+{
+  "__comment": "Example QuickBooks direction mapping. Copy this file to qb_directions.json and replace the placeholder names with values from your finance tracker sheets.",
+  "money_in": [
+    "Your Company",
+    "Northwind Partners"
+  ],
+  "money_out": [
+    "Payroll",
+    "Contractors",
+    "Vendors"
+  ],
+  "aliases": {
+    "your company": "Your Company",
+    "contractor payments": "Contractors"
+  },
+  "__reference_inv_from": [
+    "Example Vendor A",
+    "Example Vendor B",
+    "Example Vendor C"
+  ],
+  "__reference_inv_to": [
+    "Example Client A",
+    "Example Client B",
+    "Internal Transfer"
+  ]
+}

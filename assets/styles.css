@@ -1,0 +1,651 @@
+/* Finance Tracker Dashboard Styles */
+
+/* ===========================
+   GLOBAL STYLES
+   =========================== */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===========================
+   INVOICE DAG FLOWCHART
+   =========================== */
+
+.invoice-dag-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.dag-title {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-top: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.dag-subtitle {
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.dag-flowchart {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.dag-box {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 3px solid #1e7e34;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto 15px auto;
+    max-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dag-box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.dag-box.blue {
+    background-color: #4A90E2;
+    border-color: #2E5C8A;
+}
+
+.dag-box.purple {
+    background-color: #9B59B6;
+    border-color: #6C3483;
+}
+
+.dag-arrow {
+    text-align: center;
+    font-size: 30px;
+    color: #FFD700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin: 5px 0;
+}
+
+.dag-split-arrows {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px 0 15px 0;
+}
+
+.dag-bottom-boxes {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* ===========================
+   AUTHENTICATION STYLES
+   =========================== */
+
+/* Auth container */
+.auth-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 50px;
+    border-radius: 15px;
+    max-width: 500px;
+    margin: 100px auto;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Auth heading */
+.auth-heading {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Auth description text */
+.auth-description {
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Auth input fields */
+.auth-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+/* Auth buttons */
+.auth-button {
+    width: 100%;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 0 #1e7e34, 0 6px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.auth-button:hover {
+    background-color: #218838;
+}
+
+/* Form switcher buttons */
+.form-switch-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    cursor: pointer;
+    flex: 1;
+}
+
+.form-switch-button.active {
+    background-color: #4A90E2;
+}
+
+.form-switch-button.inactive {
+    background-color: #6c757d;
+}
+
+.form-switch-button.login {
+    border-radius: 5px 0 0 5px;
+}
+
+.form-switch-button.register {
+    border-radius: 0 5px 5px 0;
+}
+
+/* Auth message area */
+.auth-message {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    min-height: 24px;
+}
+
+.auth-message.error {
+    color: #ff6b6b;
+}
+
+.auth-message.success {
+    color: #28a745;
+}
+
+/* ===========================
+   USER PROFILE STYLES
+   =========================== */
+
+.profile-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 20px auto;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.profile-header {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.profile-welcome {
+    color: white;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.profile-email {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 5px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.profile-meta {
+    color: rgba(255, 255, 255, 0.7);
+    margin: 5px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+}
+
+/* Profile action buttons */
+.profile-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-button.primary {
+    background-color: #4A90E2;
+}
+
+.profile-button.danger {
+    background-color: #dc3545;
+}
+
+.profile-button.success {
+    background-color: #28a745;
+}
+
+/* Password change form */
+.password-form {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.password-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.password-message {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ===========================
+   QUICK LINKS STYLES
+   =========================== */
+
+.quicklinks-background {
+    background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    padding: 30px;
+}
+
+.quicklinks-heading {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+/* Featured section (Linkwarden) */
+.featured-section {
+    background-color: rgba(74, 144, 226, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.featured-heading {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+/* Link buttons */
+.link-button {
+    margin: 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 0 #1e7e34, 0 6px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    min-width: 200px;
+    text-align: center;
+}
+
+.link-button.featured {
+    font-size: 20px;
+    padding: 20px 40px;
+    background-color: #4A90E2;
+    box-shadow: 0 6px 0 #2E5C8A, 0 8px 12px rgba(0, 0, 0, 0.4);
+    min-width: 300px;
+}
+
+.link-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 #1e7e34, 0 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Link category sections */
+.link-category {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.link-category-heading {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.link-category-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* ===========================
+   INVOICE DAG STYLES
+   =========================== */
+
+.dag-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.dag-heading {
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.dag-flowchart {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.dag-box {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 3px solid #1e7e34;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto 15px auto;
+    max-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dag-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.dag-box.worker {
+    background-color: #4A90E2;
+    border: 3px solid #2E5C8A;
+}
+
+.dag-box.acd {
+    background-color: #9B59B6;
+    border: 3px solid #6C3483;
+}
+
+.dag-arrow {
+    text-align: center;
+    font-size: 30px;
+    color: #FFD700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin: 5px 0;
+}
+
+.dag-split-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px 0 15px 0;
+}
+
+.dag-split-arrow {
+    font-size: 30px;
+    color: #FFD700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    flex: 1;
+}
+
+.dag-bottom-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* ===========================
+   DASHBOARD STYLES
+   =========================== */
+
+.dashboard-heading {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.filter-dropdown {
+    margin-bottom: 15px;
+}
+
+.summary-container {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.summary-heading {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.status-summary-container {
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid #4A90E2;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+/* ===========================
+   TIME SERIES STYLES
+   =========================== */
+
+.timeseries-container {
+    margin-top: 30px;
+}
+
+.timeseries-heading {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.timeseries-slider-container {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+.timeseries-slider-label {
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+.timeseries-chart {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* ===========================
+   UTILITY CLASSES
+   =========================== */
+
+.text-center {
+    text-align: center;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+   =========================== */
+
+@media (max-width: 768px) {
+    .auth-container,
+    .profile-container {
+        padding: 30px 20px;
+        margin: 50px 20px;
+    }
+    
+    .link-button {
+        min-width: 150px;
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    
+    .dag-flowchart {
+        padding: 20px;
+    }
+    
+    .summary-container {
+        width: 100%;
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .auth-container,
+    .profile-container {
+        padding: 20px 15px;
+        margin: 30px 10px;
+    }
+    
+    .link-button.featured {
+        font-size: 16px;
+        padding: 15px 30px;
+        min-width: 200px;
+    }
+}

@@ -1,0 +1,72 @@
+{
+  "Comment": "Finance Data Processing Pipeline",
+  "StartAt": "LoadGoogleSheetsData",
+  "States": {
+    "LoadGoogleSheetsData": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:us-east-1:YOUR_ACCOUNT:function:sheet-loader",
+      "Parameters": {
+        "sheet_url": "https://docs.google.com/spreadsheets/d/1QEgmIzrVF7pJzzpYyacGHpW5VF0T7dTSu5te3rq2UlI/edit",
+        "tables": [
+          {
+            "name": "jobs_tbl",
+            "worksheet": "jobs_tbl",
+            "range": "A1:AG1000"
+          },
+          {
+            "name": "inv_tbl", 
+            "worksheet": "inv_tbl",
+            "range": "A1:AD1000"
+          }
+        ],
+        "s3_bucket": "your-step-functions-bucket",
+        "save_to_s3": true,
+        "execution_id.$": "$$.Execution.Name"
+      },
+      "Retry": [
+        {
+          "ErrorEquals": ["States.TaskFailed"],
+          "IntervalSeconds": 2,
+          "MaxAttempts": 3,
+          "BackoffRate": 2.0
+        }
+      ],
+      "Next": "ProcessFinancialData"
+    },
+    "ProcessFinancialData": {
+      "Type": "Task", 
+      "Resource": "arn:aws:lambda:us-east-1:YOUR_ACCOUNT:function:finance-processor",
+      "Parameters": {
+        "statusCode.$": "$.statusCode",
+        "s3_keys.$": "$.s3_keys",
+        "execution_id.$": "$$.Execution.Name",
+        "processing_config": {
+          "analysis_type": "financial_summary",
+          "save_results": true
+        }
+      },
+      "Retry": [
+        {
+          "ErrorEquals": ["States.TaskFailed"],
+          "IntervalSeconds": 2,
+          "MaxAttempts": 3,
+          "BackoffRate": 2.0
+        }
+      ],
+      "Next": "GenerateReport"
+    },
+    "GenerateReport": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:us-east-1:YOUR_ACCOUNT:function:report-generator", 
+      "Parameters": {
+        "execution_id.$": "$$.Execution.Name",
+        "results_location.$": "$.body.results_location",
+        "report_config": {
+          "format": "pdf",
+          "email_recipients": ["admin@yourcompany.com"]
+        }
+      },
+      "End": true
+    }
+  }
+}

@@ -1,0 +1,136 @@
+
+def create_google_sheet(sheet_name, dataframe, credentials_file, share_with_emails):
+    """
+    Creates a new Google Sheet, populates it with DataFrame content, and shares it with specified users.
+    """
+    # Authenticate with Google Sheets API
+    scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
+    credentials = ServiceAccountCredentials.from_json_keyfile_name(credentials_file, scope)
+    client = gspread.authorize(credentials)
+    
+    # Create a new Google Sheet
+    sheet = client.create(sheet_name)
+    
+    # Open the first worksheet and populate it with DataFrame content
+    worksheet = sheet.get_worksheet(0)
+    worksheet.update([dataframe.columns.values.tolist()] + dataframe.values.tolist())
+    
+    # Share the Google Sheet with specified users
+    for email in share_with_emails:
+        sheet.share(email, perm_type='user', role='writer')
+    
+    return sheet.url  # Return the URL of the created sheet
+
+def send_email_notification(sender_email, sender_password, recipients, sheet_links):
+    """
+    Sends email notifications to recipients with links to the created Google Sheets.
+    """
+    subject = "New Google Sheets Created for Review"
+    body = f"""
+    Dear Reviewer,
+
+    The following Google Sheets have been created for your review:
+    
+    - Invoices Review Sheet: {sheet_links['invoices']}
+    - Jobs Review Sheet: {sheet_links['jobs']}
+
+    Please review them at your earliest convenience.
+
+    Best regards,
+    Automated System
+    """
+    
+    # Set up the email
+    msg = MIMEMultipart()
+    msg['From'] = sender_email
+    msg['To'] = ", ".join(recipients)
+    msg['Subject'] = subject
+    
+    msg.attach(MIMEText(body, 'plain'))
+    
+    # Send the email
+    with smtplib.SMTP_SSL('smtp.gmail.com', 465) as server:
+        server.login(sender_email, sender_password)
+        server.sendmail(sender_email, recipients, msg.as_string())
+
+
+        def extract_text_locally(pdf_path):
+            with pdfplumber.open(pdf_path) as pdf:
+                text = "\n".join(page.extract_text() for page in pdf.pages)
+            return text
+        
+        def parse_pdf_with_lama(pdf_path, lama_endpoint):
+            """
+            Sends a PDF file to the LaMA 3.1 API for processing and retrieves structured data.
+            """
+            with open(pdf_path, 'rb') as pdf_file:
+                response = requests.post(
+                    lama_endpoint,
+                    files={'file': pdf_file}
+                )
+                print(f"Response Status Code: {response.status_code}")
+                print(f"Response Text: {response.text}")
+                
+                if response.status_code == 200:
+                    return response.json()
+                else:
+                    raise Exception(f"Failed to process {pdf_path}: {response.text}")
+        
+        def process_pdf_invoices(folder_path, lama_endpoint, method='llama'):
+            """
+            Processes all PDF invoices in a folder using the LaMA 3.1 API to extract invoice and line-item data.
+            ##############################
+            method='llama' # parses data with llama 3.1 endpoint
+            method='report' # prints existing files 
+            method='chk_report' # TODO, make checkilist and check job and invoice sheet for the item 
+            """
+            invoices_data = []
+            jobs_data = []
+            
+            for file_name in os.listdir(folder_path):
+                if file_name.endswith('.pdf'):  # Only process PDF files
+        
+                    file_path = os.path.join(folder_path, file_name)
+                    print(f'processing {file_path}')
+                    if method=='llama':
+                        print(f'Using {method} method')
+                        try:
+                            #extracted_data = parse_pdf_with_lama(file_path, lama_endpoint)
+                            extracted_data = extract_text_locally(file_path)
+                            # Extract invoice-level data
+        
+        
+                            print(f'I extracted this data from the pdf {extracted_data}')
+                            invoice_data = extracted_data.get('invoice', {})
+                            invoices_data.append({
+                                'Worker': invoice_data.get('worker', 'Unknown'),
+                                'Invoice Name': file_name,
+                                'Submission Date': invoice_data.get('submission_date', 'Unknown'),
+                                'Invoice Total': invoice_data.get('total', 0.0),
+                                'File Path': file_path
+                            })
+        
+                            # Extract job-level data (line items)
+                            line_items = extracted_data.get('line_items', [])
+                            for item in line_items:
+                                jobs_data.append({
+                                    'Worker': invoice_data.get('worker', 'Unknown'),
+                                    'Invoice Name': file_name,
+                                    'Line Item': item.get('description', 'Unknown'),
+                                    'Units Worked': item.get('units', 0),
+                                    'Billing Rate': item.get('rate', 0.0),
+                                    'Line Item Total': item.get('total', 0.0)
+                                })
+                        except Exception as e:
+                            print(f"Error processing file {file_name}: {e}")
+                    elif method=='report':
+                        print(file_name)
+                    elif method=='check_report':
+                        print(file_name)
+                    else:    
+                        print('specify a valid method')
+            
+            invoices_df = pd.DataFrame(invoices_data)
+            jobs_df = pd.DataFrame(jobs_data)
+            
+            return invoices_df, jobs_df

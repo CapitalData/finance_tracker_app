@@ -1,0 +1,409 @@
+,Source,Target,Status,Inv_name
+0,acd,iqumulus,paid,08_22_acd_celenase_kh_invoice
+1,acd,accelebrate,nd,accelebrate_spark materials_invoice_3 - google sheets.pdf
+2,acd,accelebrate,nd,accelebrate_spark materials_invoice_4_update.pdf
+3,acd,accelebrate,nd,accelebrate_spark_invoice_4.pdf
+4,acd,bhanalyitcs,paid,acd_1
+5,acd,bhanalyitcs,paid,acd_10
+6,acd,pma,paid,acd_1001
+7,acd,pma,paid,acd_1002
+8,acd,spectre,paid,acd_1003
+9,acd,pma,paid,acd_1004
+10,acd,pma,paid,acd_1005
+11,acd,spectre,paid,acd_1006
+12,acd,spectre,paid,acd_1007
+13,acd,t.gerbino,pending,acd_1008
+14,acd,bhanalyitcs,paid,acd_11
+15,acd,bhanalyitcs,paid,acd_12
+16,acd,bhanalyitcs,paid,acd_13
+17,acd,bhanalyitcs,paid,acd_14
+18,acd,bhanalyitcs,paid,acd_15
+19,acd,nd,paid,acd_16
+20,acd,bhanalyitcs,paid,acd_17
+21,acd,bhanalyitcs,paid,acd_18
+22,acd,nd,paid,acd_19
+23,acd,bhanalyitcs,paid,acd_2
+24,acd,iqumulus,paid,acd_20_1_23-iq- celanese
+25,acd,webage,paid,acd_21
+26,acd,webage,void,acd_21_void dupl
+27,acd,webage,paid,acd_22
+28,acd,bhanalyitcs,paid,acd_23
+29,acd,bhanalyitcs,paid,acd_24
+30,acd,bhanalyitcs,paid,acd_25
+31,acd,exit_certifed,paid,acd_26
+32,acd,bhanalyitcs,paid,acd_27
+33,acd,accelebrate,paid,acd_28
+34,acd,accelebrate,void,acd_29_void
+35,acd,bhanalyitcs,paid,acd_3
+36,acd,accelebrate,paid,acd_30_acc
+37,acd,data_society,paid,acd_30_ds
+38,acd,accelebrate,paid,acd_31
+39,acd,webage,paid,acd_32
+40,acd,exit_certifed,void,acd_33- taken care of on inv 17
+41,acd,bhanalyitcs,paid,acd_34
+42,acd,bhanalyitcs,paid,acd_35
+43,acd,accelebrate,paid,acd_36
+44,acd,data_society,paid,acd_37
+45,acd,accelebrate,paid,acd_38_cdc
+46,acd,accelebrate,paid,acd_38_kmart_sql
+47,acd,changecx,paid,acd_39
+48,acd,bhanalyitcs,paid,acd_4
+49,acd,webage,paid,acd_40
+50,acd,bhanalyitcs,paid,acd_41
+51,acd,bhanalyitcs,paid,acd_42
+52,acd,webage,paid,acd_43
+53,acd,bhanalyitcs,paid,acd_44
+54,acd,changecx,void,acd_44- void dupl; submitted 46
+55,acd,webage,paid,acd_45
+56,acd,changecx,paid,acd_46
+57,acd,bhanalyitcs,paid,acd_47
+58,acd,webage,paid,acd_48
+59,acd,webage,paid,acd_49
+60,acd,bhanalyitcs,paid,acd_5
+61,acd,data_society,paid,acd_50
+62,acd,bhanalyitcs,paid,acd_51
+63,acd,perl health,paid,acd_52
+64,acd,accelebrate,paid,acd_53
+65,acd,bhanalyitcs,paid,acd_54
+66,acd,bhanalyitcs,paid,acd_55
+67,acd,perl health,paid,acd_56
+68,acd,webage,paid,acd_57
+69,acd,exit_certifed,paid,acd_58
+70,acd,accelebrate,paid,acd_59
+71,acd,bhanalyitcs,paid,acd_6
+72,acd,exit_certifed,paid,acd_60 
+73,acd,bhanalyitcs,paid,acd_61
+74,acd,bhanalyitcs,paid,acd_62
+75,acd,bhanalyitcs,pending,acd_63
+76,acd,bhanalyitcs,paid,acd_64_rev2
+77,acd,bhanalyitcs,paid,acd_65
+78,acd,exit_certifed,paid,acd_66
+79,acd,axcel,paid,acd_67
+80,acd,accelebrate,paid,acd_68-nov_5-_6_2024
+81,acd,accelebrate,paid,acd_69-10_29_24
+82,acd,bhanalyitcs,paid,acd_7
+83,acd,accelebrate,paid,acd_70-oct_31_2024
+84,acd,accelebrate,paid,acd_71-sept18_19_2024
+85,acd,accelebrate,paid,acd_72
+86,acd,bhanalyitcs,void,acd_73
+87,acd,bhanalyitcs,pending,acd_73_update1
+88,acd,accelebrate,paid,acd_74
+89,acd,accelebrate,paid,acd_75
+90,acd,exit_certifed,paid,acd_76
+91,acd,bhanalyitcs,pending,acd_77
+92,acd,exit_certifed,paid,acd_78
+93,acd,data_society,pending,acd_79
+94,acd,bhanalyitcs,paid,acd_8
+95,acd,accelebrate,pending,acd_80
+96,acd,bhanalyitcs,pending,acd_81
+97,acd,webage,pending,acd_82
+98,acd,accelebrate,pending,acd_83
+99,acd,data_society,pending,acd_84
+100,acd,webage,nd,acd_85
+101,acd,webage,pending,acd_86
+102,acd,webage,pending,acd_87
+103,acd,ascendient,pending,acd_88
+104,acd,bh analytics,,acd_89
+105,acd,bhanalyitcs,paid,acd_9
+106,acd,iqumulus,paid,acd_iq_celenase_invoice_3 - invoice
+107,acd,iqumulus,paid,acd_iq_celenase_invoice_4 - invoice
+108,acd,iqumulus,paid,acd_iq_celenase_invoice_5
+109,acd,family_acct,paid,acd_nanny_1
+110,acd,family_acct,pending,acd_nanny_2
+111,acd,family_acct,pending,acd_nanny_3
+112,acd,webage,nd,acd_tbd
+113,acd,accelebrate,nd,acellebrate blog invoice 1/2022.pdf
+114,o.darwish,acd,paid,aldarwish_invoice_20220422
+115,o.darwish,acd,paid,aldarwish_invoice_20220630
+116,o.darwish,acd,paid,aldarwish_invoice_20220707
+117,a.martinez,acd,paid,amartinez_half_week
+118,a.martinez,acd,paid,amartinez_half_week
+119,a.martinez,acd,paid,amartinez_weekly_error_7_5_24
+120,a.martinez,acd,paid,amartinez_weekly_pay_7_12_24
+121,a.martinez,acd,paid,amartinez_weekly_pay_7_5_24
+122,a.martinez,acd,paid,amartinez_weekly_refund_7_5_24
+123,c.healey,acd,paid,chealey_2023-03
+124,c.healey,acd,paid,chealey_2023-05
+125,c.healey,acd,paid,chealey_x
+126,c.healey,acd,paid,chealey_x
+127,c.healey,acd,paid,chealey_x
+128,c.healey,acd,paid,chealey_x
+129,c.healey,acd,paid,chealey_x
+130,c.healey,acd,paid,chealey_x
+131,acd,bhanalyitcs,paid,check
+132,acd,bhanalyitcs,paid,check
+133,acd,accelebrate,paid,check
+134,acd,bhanalyitcs,paid,check
+135,acd,family_acct,paid,check
+136,c.sako,,paid,christine sako invoice #001.pdf
+137,c.healey,acd,paid,conor_healy_2024-08 - invoice 20240831-02 - with receipts.pdf
+138,acd,data_society,nd,data society hours worked.xlsx
+139,acd,data_society,nd,datasociety_ updated invoicing protocols - gunnar@datasociety.com - data society mail.html.mht
+140,acd,omicia,nd,freshbooks - invoice 0000011.pdf
+141,acd,rancho_biosciences,nd,freshbooks - invoice 0000015.pdf
+142,g.mein,acd,paid,g_mein_1004
+143,acd,owner donation,paid,gap filling
+144,g.cahal,acd,paid,gchahal_1
+145,g.kleemann,acd,paid,gkleemann_dec_2024_instr
+146,g.kleemann,acd,paid,gkleemann_jan_feb_2025
+147,g.kleemann,acd,paid,gkleemann_june_2024
+148,g.kleemann,acd,paid,gkleemann_may_2024
+149,g.kleemann,acd,paid,gkleemann_nd
+150,g.mein,acd,paid,gmein_cdc_ta_invoice
+151,g.mein,acd,paid,gmein_invoice-ts-2024-1
+152,g.mein,acd,paid,gmein_together_invoice 1001
+153,g.mein,acd,paid,gmein_together_invoice 1003
+154,g.mein,acd,paid,gmein_x
+155,g.mein,acd,paid,gmeininvoice_2
+156,g.kleemann,grakn,nd,grakn-rheos-1-2021.docx
+157,acd,grakn,nd,grakn-rheos-1-2021.pdf
+158,acd,grakn,nd,grakn-rheos-9-2020.pdf
+159,h.jang,acd,paid,hjang_x
+160,acd,data_society,paid,inv30aka8_
+161,irs,acd,paid,irs overcharge
+162,acd,irs,paid,irs repayment
+163,j.ying,acd,paid,jying_1
+164,k.martin,acd,void,k_martin 2024-08-deloitte
+165,k.martin,,paid,k.martin_2024-12-all
+166,k.kamerkar,,paid,kirti_april_25
+167,k.kamerkar,acd,paid,kirti_feb_25
+168,kirti rohit kamerkar,unknown,pending,kirti_feb_25.pdf
+169,k.kamerkar,acd,paid,kirti_jan_25
+170,unknown,unknown,k.kamerkar,kirti_mar_25
+171,kirti rohit kamerkar,unknown,pending,kirti_march_2024.pdf
+172,k.kamerkar,acd,paid,kirti_may_25.pdf
+173,k.kamerkar,acd,paid,kkamerkar_10_24
+174,k.kamerkar,acd,paid,kkamerkar_11_24
+175,k.kamerkar,acd,paid,kkamerkar_12_24
+176,k.kamerkar,acd,paid,kkamerkar_4_24
+177,k.kamerkar,acd,paid,kkamerkar_5_2024
+178,k.kamerkar,acd,paid,kkamerkar_6_2024
+179,k.kamerkar,acd,paid,kkamerkar_7_2024
+180,acd,data_society,paid,kleemann_1200_sent_03621_datasociety.xlsx
+181,acd,data_society,nd,kleemann_1200_sent_120525_datasociety.xlsx
+182,acd,data_society,nd,kleemann_august_23_datasociety.xlsx
+183,acd,data_society,nd,kleemann_dec21_datasociety.xlsx
+184,acd,data_society,pending,kleemann_february22_datasociety.xlsx
+185,acd,data_society,nd,kleemann_june_datasociety.xlsx
+186,acd,data_society,nd,kleemann_june_datasociety.xlsx - t&m.pdf
+187,acd,data_society,nd,kleemann_may_datasociety.xlsx
+188,acd,data_society,nd,kleemann_may22_datasociety.xlsx
+189,acd,data_society,nd,kleemann_may22_datasociety.xlsx - t&m.pdf
+190,acd,rancho_biosciences,nd,kleemann_mayupdate2018.docx
+191,acd,data_society,nd,kleemann_nov21_datasociety.xlsx
+192,acd,data_society,nd,kleemann_oct21_datasociety.xlsx
+193,acd,g.kleemann,paid,kleemann_pay_12_2023
+194,acd,data_society,nd,kleemann_sept21_datasociety.xlsx
+195,acd,rancho_biosciences,nd,kleemannexpense6_2_17.xls
+196,acd,rancho_biosciences,nd,kleemanninvoice_4_29_2017.docx
+197,acd,rancho_biosciences,paid,kleemanninvoice_august2017.docx
+198,acd,rancho_biosciences,paid,kleemanninvoice_august2018.docx
+199,acd,rancho_biosciences,paid,kleemanninvoice_july2017.docx
+200,acd,rancho_biosciences,paid,kleemanninvoice_july2018.docx
+201,acd,rancho_biosciences,paid,kleemanninvoice_june2017.docx
+202,acd,rancho_biosciences,paid,kleemanninvoice_june2018.docx
+203,acd,rancho_biosciences,paid,kleemanninvoice_march2018.docx
+204,acd,rancho_biosciences,paid,kleemanninvoice_may2018.docx
+205,acd,rancho_biosciences,paid,kleemanninvoice_october2018.docx
+206,acd,rancho_biosciences,paid,kleemanninvoice_september2018.docx
+207,k.martin,acd,paid,kmartin_12_2023_reg
+208,k.martin,acd,pending,kmartin_2022_07_intern_inv02
+209,k.martin,acd,paid,kmartin_2022_4-cdc
+210,k.martin,acd,paid,kmartin_2022-07
+211,k.martin,acd,paid,kmartin_2022-08
+212,k.martin,acd,paid,kmartin_2022-09-dt
+213,k.martin,acd,pending,kmartin_2022-09-reg_oldrate
+214,k.martin,acd,pending,kmartin_2022-09-reg.2_newrate
+215,k.martin,acd,paid,kmartin_2022-10-cdc
+216,k.martin,acd,paid,kmartin_2022-10-reg
+217,k.martin,acd,paid,kmartin_2022-11-reg
+218,k.martin,acd,paid,kmartin_2022-12-cdc
+219,k.martin,acd,paid,kmartin_2022-12-reg
+220,k.martin,acd,paid,kmartin_2023_01
+221,k.martin,acd,paid,kmartin_2023_02
+222,k.martin,acd,paid,kmartin_2023_03
+223,k.martin,acd,paid,kmartin_2023_04
+224,k.martin,acd,paid,kmartin_2023_05
+225,k.martin,acd,paid,kmartin_2023_11_reg
+226,k.martin,acd,paid,kmartin_2023_11?
+227,k.martin,acd,paid,kmartin_2023-07-all
+228,k.martin,acd,paid,kmartin_2023-08-all
+229,k.martin,acd,paid,kmartin_2023-09-all
+230,k.martin,acd,paid,kmartin_2023-10-deloitte
+231,k.martin,acd,paid,kmartin_2023-11-reg
+232,k.martin,acd,paid,kmartin_2023-12-cdc
+233,k.martin,acd,paid,kmartin_2023-12-reg_6776.25
+234,k.martin,acd,paid,kmartin_2024_8_usps_exp
+235,k.martin,acd,paid,kmartin_2024-01-cdc
+236,k.martin,acd,paid,kmartin_2024-01-reg
+237,k.martin,acd,paid,kmartin_2024-02-delbc
+238,k.martin,acd,paid,kmartin_2024-02-reg
+239,k.martin,acd,paid,kmartin_2024-03-delbc
+240,k.martin,acd,paid,kmartin_2024-03-reg
+241,k.martin,acd,void,kmartin_2024-04-boot
+242,k.martin,acd,paid,kmartin_2024-04-boot-exp
+243,k.martin,acd,paid,kmartin_2024-04-boot-rev
+244,k.martin,acd,paid,kmartin_2024-04-reg
+245,k.martin,acd,paid,kmartin_2024-05-reg
+246,k.martin,acd,paid,kmartin_2024-06-all
+247,k.martin,acd,paid,kmartin_2024-07-reg
+248,k.martin,acd,paid,kmartin_2024-08-deloitte-rev
+249,k.martin,acd,paid,kmartin_2024-08-reg
+250,k.martin,acd,paid,kmartin_2024-08-usps
+251,k.martin,acd,paid,kmartin_2024-08-usps_duplicatepayment
+252,k.martin,acd,paid,kmartin_2024-10-all
+253,k.martin,acd,paid,kmartin_2024-10-all- kmartin_2024-08-usps_dulplicate
+254,k.martin,acd,paid,kmartin_2024-11-reg
+255,k.martin,,paid,kmartin_2025-01-all
+256,k.martin,,paid,kmartin_2025-02-all
+257,k.martin,various,paid,kmartin_2025-03-all.pdf
+258,k.martin,unknown,paid,kmartin_2025-04-all.pdf
+259,k.martin,acd,paid,kmartin_deloitte_nov_24
+260,k.martin,acd,paid,kmartin-2024-09-all
+261,l.yurica,acd,paid,l.yurica_7rev_12_13_2024.pdf
+262,l.matheson,acd,paid,lmatheson_8_24
+263,l.matheson,acd,paid,lmatheson_8_24
+264,l.matheson,acd,paid,lmatheson_x
+265,l.matheson,acd,paid,lmatheson_x
+266,l.matheson,acd,paid,lmatheson_x
+267,l.yurica,acd,paid,lyurica_1
+268,l.yurica,acd,paid,lyurica_10_27_2024
+269,l.yurica,acd,paid,lyurica_2
+270,l.yurica,acd,paid,lyurica_3
+271,l.yurica,acd,paid,lyurica_6_dec_9_2024
+272,l.yurica,acd,paid,lyurica_9_24
+273,l.yurica,acd,paid,lyurica_deloitte_11_27_2024.pdf
+274,l.yurica,acd,paid,lyurica_deloitte_23
+275,l.yurica,acd,paid,lyurica_exp_deloitte_23
+276,m.castro,acd,paid,mayra_april_2024
+277,m.laturney,acd,paid,meghan_laturney_invoice_1
+278,m.labowitz,acd,paid,mlabowitz_1
+279,m.labowitz,acd,paid,mlabowitz_2
+280,m.laturney,acd,paid,mlaturney_2
+281,m.laturney,acd,paid,mlaturney_3_cdc
+282,acd,family_acct,paid,nanny_pay recovery
+283,acd,family_acct,paid,nanny_pay recovery
+284,acd,family_acct,paid,nanny_pay recovery
+285,acd,family_acct,paid,nanny_pay recovery
+286,acd,family_acct,paid,nanny_pay recovery
+287,acd,family_acct,paid,nanny_pay recovery
+288,acd,family_acct,paid,nanny_pay recovery
+289,acd,family_acct,paid,nanny_pay recovery
+290,acd,family_acct,paid,nanny_pay recovery
+291,acd,grakn,nd,nextrna invoice 12_2021.pdf
+292,acd,grakn,nd,nextrna invoice 12/2021.docx
+293,o.darwish,acd,paid,o_darwish_20241026
+294,o.darwish,acd,pending,o_darwish_20241029
+295,o.darwish,acd,paid,o_darwish_20241031
+296,o.darwish,acd,paid,o_darwish_20241105
+297,o.darwish,acd,paid,o.darwish_5
+298,o.darwish,acd,paid,odarwish_2024_01
+299,o.darwish,acd,paid,odarwish_2024_02
+300,o.darwish,acd,paid,odarwish_2024_03
+301,o.darwish,acd,paid,odarwish_2024_04
+302,o.darwish,acd,paid,odarwish_20241111
+303,o.darwish,acd,pending,odarwish_20241118
+304,o.darwish,acd,paid,odarwish_20241216
+305,o.darwish,acd,paid,omar_acd_invoice_20220910
+306,o.darwish,acd,paid,omar_acd_invoice_20221020
+307,acd,exit_certifed,paid,onlinetransfer
+308,acd,exit_certifed,paid,onlinetransfer
+309,acd,exit_certifed,paid,onlinetransfer
+310,acd,exit_certifed,paid,onlinetransfer
+311,acd,exit_certifed,paid,onlinetransfer
+312,acd,exit_certifed,paid,onlinetransfer
+313,acd,exit_certifed,paid,onlinetransfer
+314,acd,exit_certifed,paid,onlinetransfer
+315,acd,exit_certifed,paid,onlinetransfer
+316,acd,exit_certifed,paid,onlinetransfer
+317,acd,exit_certifed,paid,onlinetransfer
+318,acd,exit_certifed,paid,onlinetransfer
+319,acd,exit_certifed,paid,onlinetransfer
+320,acd,exit_certifed,paid,onlinetransfer
+321,acd,exit_certifed,paid,onlinetransfer
+322,acd,exit_certifed,paid,onlinetransfer
+323,acd,,paid,owner_donation
+324,acd,exit_certifed,paid,owner_donation
+325,p.denkabe,acd,paid,pdenkabe_1
+326,p.denkabe,acd,paid,pdenkabe_2
+327,acd,webage,paid,perfect_bonus_11/22/24_odarwish
+328,o.darwish,acd,pending,perfect_bonus_11/22/24_odarwish
+329,r.lee,acd,paid,r.lee_34_exp
+330,r.lee,acd,paid,r.lee_34_job
+331,r.lee,acd,paid,r.lee_35
+332,acd,grakn,nd,rair_april_2021_invoice_template.dotx
+333,acd,grakn,nd,rair_april_2021_invoice.dotx
+334,acd,grakn,nd,rair_april_2021_invoice.pdf
+335,acd,grakn,paid,refund - kirti pay
+336,r.lee,acd,paid,rlee_1
+337,r.lee,acd,paid,rlee_10
+338,r.lee,acd,paid,rlee_11
+339,r.lee,acd,pending,rlee_12
+340,r.lee,acd,paid,rlee_13
+341,r.lee,acd,paid,rlee_14
+342,r.lee,acd,?,rlee_15
+343,r.lee,acd,paid,rlee_15_1
+344,r.lee,acd,paid,rlee_16
+345,r.lee,acd,paid,rlee_17
+346,r.lee,acd,paid,rlee_18
+347,r.lee,acd,paid,rlee_19
+348,r.lee,acd,paid,rlee_2
+349,r.lee,acd,paid,rlee_20
+350,r.lee,acd,paid,rlee_21
+351,r.lee,acd,paid,rlee_22
+352,r.lee,acd,paid,rlee_23
+353,r.lee,acd,paid,rlee_24
+354,r.lee,acd,paid,rlee_25
+355,r.lee,acd,paid,rlee_26
+356,r.lee,acd,paid,rlee_27
+357,r.lee,acd,paid,rlee_28_rev
+358,r.lee,acd,paid,rlee_29
+359,r.lee,acd,paid,rlee_3
+360,r.lee,acd,paid,rlee_30
+361,r.lee,acd,paid,rlee_31
+362,r.lee,acd,paid,rlee_32
+363,r.lee,acd,paid,rlee_33
+364,r.lee,acd,paid,rlee_4
+365,r.lee,acd,paid,rlee_5
+366,r.lee,acd,paid,rlee_6
+367,r.lee,acd,paid,rlee_7
+368,r.lee,acd,paid,rlee_8
+369,r.lee,acd,paid,rlee_9
+370,r.lee,acd,paid,rlee_x
+371,r.lee,acd,paid,rlee_x?
+372,s.panesar,acd,paid,spanesar_1
+373,s.panesar,acd,paid,spanesar_2
+374,acd,nd,nd,spark?
+375,acd,square inc o,nd,sqinv-archie-mn77nan2rg1sqpomtiwh7q.docx
+376,acd,na,paid,squ mischarge
+377,acd,na,paid,square refund
+378,t.alabi,acd,paid,talabi_1
+379,t.alabi,acd,paid,talabi_2
+380,t.alabi,acd,paid,talabi_3
+381,t.alabi,acd,paid,talabi_4
+382,t.alabi,acd,paid,talabi_5
+383,t.alabi,acd,paid,talabi_5_2022
+384,t.alabi,acd,paid,talabi_8_2022
+385,t.alabi,acd,paid,talabi_9_2022
+386,t.alabi,acd,paid,talabi_cdc_2024
+387,y.mirza,acd,paid,y.mirza_111117_cdc
+388,y.mirza,acd,paid,y.mirza_111118_cdc
+389,y.mirza,acd,paid,ymirza_10_23
+390,y.mirza,acd,paid,ymirza_11111_mar_24-3/29/24
+391,y.mirza,acd,paid,ymirza_111114
+392,y.mirza,acd,paid,ymirza_111115
+393,y.mirza,acd,paid,ymirza_111116
+394,y.mirza,acd,paid,ymirza_11112_apr_24
+395,y.mirza,acd,void,ymirza_11112_feb_24-2/19/24
+396,y.mirza,acd,paid,ymirza_11112_feb_24-2/25/24
+397,y.mirza,acd,paid,ymirza_11116_augment
+398,y.mirza,acd,paid,ymirza_12_23
+399,y.mirza,acd,void,ymirza_x_mar_24-3/25/24
+400,y.mirza,deloitte,paid,yosef mirza - invoice - submitted 05.09.25.pdf
+401,acd,asmbly,paid,zelle payment from asmbly
+402,,,,
+403,,,,
+404,,,,
+405,,,nd,
+406,,,nd,
+407,,,nd,

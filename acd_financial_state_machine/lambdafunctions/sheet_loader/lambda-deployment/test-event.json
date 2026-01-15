@@ -1,0 +1,21 @@
+{
+  "sheet_url": "https://docs.google.com/spreadsheets/d/1QEgmIzrVF7pJzzpYyacGHpW5VF0T7dTSu5te3rq2UlI/edit",
+  "tables": [
+    {
+      "name": "jobs_tbl",
+      "worksheet": "jobs_tbl", 
+      "range": "A1:AG1000"
+    },
+    {
+      "name": "inv_tbl",
+      "worksheet": "inv_tbl",
+      "range": "A1:AD1000"
+    }
+  ],
+  "processing_options": {
+    "combine_tables": false,
+    "return_data": true
+  },
+  "s3_bucket": "acd-finance-pipeline",
+  "execution_id": "test-execution-123"
+}

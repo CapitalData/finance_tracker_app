@@ -1,0 +1,28 @@
+# Finance Tracker Requirements
+# Install with: pip install -r requirements.txt
+
+# Core dependencies
+dash>=2.0.0
+pandas>=1.3.0
+plotly>=5.0.0
+flask>=2.0.0
+
+# Google Sheets integration
+gspread>=5.0.0
+oauth2client>=4.1.3
+google-api-python-client>=2.0.0
+
+# Data processing
+networkx>=2.6.0
+
+# Environment variables
+python-dotenv>=0.19.0
+
+# HTTP integrations
+requests>=2.31.0
+
+# Authentication
+werkzeug>=2.0.0
+
+# Admin dashboard
+dash-table>=5.0.0

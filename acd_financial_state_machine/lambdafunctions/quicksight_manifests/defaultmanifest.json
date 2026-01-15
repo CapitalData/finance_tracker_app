@@ -1,0 +1,15 @@
+{
+  "fileLocations": [
+    {
+      "URIPrefixes": [
+        "s3://acd-finance-pipeline/quicksight-ready/invoices/"
+      ]
+    }
+  ],
+  "globalUploadSettings": {
+    "format": "JSON",
+    "delimiter": ",",
+    "textqualifier": "\"",
+    "containsHeader": "true"
+  }
+}

@@ -1,0 +1,12 @@
+# Create QuickSight data source pointing to your S3 bucket
+aws quicksight create-data-source \
+    --aws-account-id 923029763609 \
+    --data-source-id classification-analysis \
+    --name "Classification Analysis Data" \
+    --type S3 \
+    --data-source-parameters S3Parameters='{
+        "ManifestFileLocation": {
+            "Bucket": "acd-finance-pipeline",
+            "Key": "quicksight-data/manifest.json"
+        }
+    }'
