@@ -1,3 +1,35 @@
+# ---------------------------------------------------------------------------
+# Demo Data Banner
+# ---------------------------------------------------------------------------
+def render_demo_data_banner():
+    if sandbox_mode_enabled() or not GOOGLE_SHEET_URL:
+        return html.Div([
+            html.Strong("Demo Data Loaded: ", style={"color": "#d32f2f"}),
+            html.Span("The app is currently displaying demo transactions from a local CSV file. "),
+            html.A("Connect to real data by following these instructions.", href="https://github.com/your-org/your-repo/wiki/Finance-Tracker-Setup", target="_blank", style={"color": "#1976d2", "textDecoration": "underline"}),
+        ], style={
+            "backgroundColor": "#fff8e1",
+            "border": "1px solid #ffecb3",
+            "padding": "10px",
+            "borderRadius": "6px",
+            "marginBottom": "12px",
+            "color": "#5d4037",
+        })
+    return None
+# ---------------------------------------------------------------------------
+# Demo CSV loader for sandbox or local mode
+# ---------------------------------------------------------------------------
+def load_demo_transactions_csv(csv_path=None):
+    """Load demo transactions from a local CSV file for demo/sandbox mode."""
+    if csv_path is None:
+        # Default path relative to this file
+        csv_path = os.path.join(os.path.dirname(__file__), '../control_panel_dist/demo_transactions.csv')
+    try:
+        df = pd.read_csv(csv_path)
+        return df
+    except Exception as e:
+        print(f"Failed to load demo CSV: {e}")
+        return pd.DataFrame()
 import base64
 import mimetypes
 import os
@@ -825,11 +857,19 @@ def get_last_sync_time() -> Optional[str]:
 # ---------------------------------------------------------------------------
 # Dash layout
 # ---------------------------------------------------------------------------
+
+# Automatically load transactions from demo CSV if in sandbox mode or no Google Sheet
+if sandbox_mode_enabled() or not GOOGLE_SHEET_URL:
+    TRANSACTIONS_DF = load_demo_transactions_csv()
+else:
+    TRANSACTIONS_DF = None  # Real data will be loaded from Google Sheets as usual
+
 app = Dash(__name__, suppress_callback_exceptions=True)
 app.title = "Finance Tracker"
 
 invoice_tab_layout = html.Div(
     [
+        render_demo_data_banner(),
         html.Div(
             [
                 html.H3("Invoice Intake & Status"),
