@@ -4,11 +4,14 @@ import acd_datatool as acd
 from oauth2client.service_account import ServiceAccountCredentials
 import pandas as pd
 import numpy as np
+import os
 # your data & mappings
 ##### credentials through google cloud #####
 
 SCOPE = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-CREDENTIALS = ServiceAccountCredentials.from_json_keyfile_name('/Users/gunnarkleemann/.ssh/financetrack-acd-aa2d12d1f346.json', SCOPE)
+DEFAULT_CREDENTIALS = os.path.expanduser("~/.ssh/financetrack-acd-aa2d12d1f346.json")
+GOOGLE_CREDENTIALS_FILE = os.getenv("GOOGLE_APPLICATION_CREDENTIALS", DEFAULT_CREDENTIALS)
+CREDENTIALS = ServiceAccountCredentials.from_json_keyfile_name(GOOGLE_CREDENTIALS_FILE, SCOPE)
 GOOGLE_SHEET_URL = 'https://docs.google.com/spreadsheets/d/1QEgmIzrVF7pJzzpYyacGHpW5VF0T7dTSu5te3rq2UlI/edit?gid=1122289088#gid=1122289088'
 
 ###########################################

@@ -2,6 +2,8 @@ from dash import Dash, html, dcc, callback, Output, Input
 import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
+import os
+import sys
 
 import pandas as pd
 
@@ -33,7 +35,8 @@ def load_method(method):
         #Method 1 -  this loads the ssh key for the service account
 
         # Path to the credentials file
-        filename = '/Users/gunnarkleemann/.ssh/financetrack-acd-aa2d12d1f346.json'
+        default_credentials = os.path.expanduser('~/.ssh/financetrack-acd-aa2d12d1f346.json')
+        filename = os.getenv('GOOGLE_APPLICATION_CREDENTIALS', default_credentials)
 
         # Define the scope
         scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
