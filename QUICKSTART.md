@@ -221,6 +221,26 @@ If you already have `GOOGLE_APPLICATION_CREDENTIALS` exported system-wide, the a
 
 **Security note**: Never commit the JSON key to version control. Only store the *path reference* in `.env`. For production, use a secrets manager (AWS Secrets Manager, Google Secret Manager, etc.) and inject the path at runtime.
 
+## Reconnect to Existing Historical Data
+
+If the invoice tool is showing demo/empty data, reconnect it to your existing Google data sources using the exact IDs from the environment where history already exists.
+
+1. In `.env`, set:
+   - `GOOGLE_SERVICE_ACCOUNT_JSON` to your service-account JSON path
+   - `GOOGLE_SHEET_URL` to the production Sheet that contains `inv_tbl`/jobs data
+   - `INVOICE_INCOMING_FOLDER_ID` to the existing incoming invoices Drive folder
+   - `INVOICE_PROCESSED_ROOT_FOLDER_ID` to the existing processed invoices root folder
+   - (Optional) `INV_TBL_NAME` if your invoice tab name differs from `inv_tbl`
+2. Share the Google Sheet + both Drive folders with the service account `client_email` as **Editor**.
+3. Restart the app and verify you no longer see the demo-data banner.
+4. In the Invoice tab, confirm historical files appear from the configured Drive folders.
+
+### Historical Trends Tab (daily snapshots)
+
+- The Historical Trends tab uses the local SQLite file `finance_tracker.db` (`daily_metrics` table).
+- If you want prior trend history on a new machine, copy your existing `finance_tracker.db` from the previous environment into `finance_tracker/` before launch.
+- If you do not copy an existing DB, the app starts collecting daily snapshots from now onward.
+
 ## Config Files to Copy
 
 | File | Source | Purpose |

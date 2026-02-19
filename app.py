@@ -6,7 +6,7 @@ def render_demo_data_banner():
         return html.Div([
             html.Strong("Demo Data Loaded: ", style={"color": "#d32f2f"}),
             html.Span("The app is currently displaying demo transactions from a local CSV file. "),
-            html.A("Connect to real data by following these instructions.", href="https://github.com/your-org/your-repo/wiki/Finance-Tracker-Setup", target="_blank", style={"color": "#1976d2", "textDecoration": "underline"}),
+            html.A("Connect to real data by following these instructions.", href=FINANCE_TRACKER_SETUP_URL, target="_blank", style={"color": "#1976d2", "textDecoration": "underline"}),
         ], style={
             "backgroundColor": "#fff8e1",
             "border": "1px solid #ffecb3",
@@ -76,6 +76,10 @@ PROCESSED_ROOT_FOLDER_ID = os.getenv(
 )
 GOOGLE_SHEET_URL = os.getenv("GOOGLE_SHEET_URL")
 INV_TBL_NAME = os.getenv("INV_TBL_NAME", "inv_tbl")
+FINANCE_TRACKER_SETUP_URL = os.getenv(
+    "FINANCE_TRACKER_SETUP_URL",
+    "https://github.com/CapitalData/acd-meta-repo/blob/main/finance_tracker/QUICKSTART.md#reconnect-to-existing-historical-data",
+)
 AUTO_REFRESH_ENABLED = os.getenv("INVOICE_AUTO_REFRESH", "true").lower() in {"true", "1", "yes", "on"}
 SCOPES = [
     "https://www.googleapis.com/auth/drive",
